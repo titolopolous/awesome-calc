@@ -10,7 +10,7 @@
     <EditText
         android:id="@+id/currentInputTextView"
         android:layout_width="380dp"
-        android:layout_height="100dp"
+        android:layout_height="197dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -25,333 +25,333 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/LinearLayout0"
-        android:layout_width="392dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="5dp"
-        android:divider="?android:attr/listDivider"
-        android:dividerPadding="30dp"
-        android:orientation="horizontal"
-        android:showDividers="middle|beginning|end"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonsConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/currentInputTextView">
 
-        <Button
-            android:id="@+id/clearButton"
+        <LinearLayout
+            android:id="@+id/LinearLayout0"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="C"
-            android:textAlignment="center"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
+            android:layout_height="0dp"
+            android:divider="?android:attr/listDivider"
+            android:dividerPadding="30dp"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end"
+            app:layout_constraintBottom_toTopOf="@+id/LinearLayout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/percButton"
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="C"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/percButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="%"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/backspaceButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="R"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/divButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="/"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="%"
-            android:textAlignment="center"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
+            android:layout_height="0dp"
+            android:divider="?android:attr/listDivider"
+            android:dividerPadding="30dp"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end"
+            app:layout_constraintBottom_toTopOf="@+id/LinearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout0">
 
-        <Button
-            android:id="@+id/backspaceButton"
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="7"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="8"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="9"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/mulButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="X"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="R"
-            android:textAlignment="center"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
+            android:layout_height="0dp"
+            android:divider="?android:attr/listDivider"
+            android:dividerPadding="30dp"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end"
+            app:layout_constraintBottom_toTopOf="@+id/LinearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout1">
 
-        <Button
-            android:id="@+id/divButton"
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="5"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="6"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/subButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="/"
-            android:textAlignment="center"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
+            android:layout_height="0dp"
+            android:divider="?android:attr/listDivider"
+            android:dividerPadding="30dp"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end"
+            app:layout_constraintBottom_toTopOf="@+id/LinearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout2">
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
 
-    <LinearLayout
-        android:id="@+id/LinearLayout1"
-        android:layout_width="390dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="5dp"
-        android:divider="?android:attr/listDivider"
-        android:dividerPadding="30dp"
-        android:orientation="horizontal"
-        android:showDividers="middle|beginning|end"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentInputTextView">
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
 
-        <Button
-            android:id="@+id/button7"
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/sumButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="7"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
+            android:layout_height="0dp"
+            android:divider="?android:attr/listDivider"
+            android:dividerPadding="30dp"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout3">
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="8"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
+            <Button
+                android:id="@+id/button00"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="9"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
 
-        <Button
-            android:id="@+id/mulButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="X"
-            android:textAlignment="center"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
+            <Button
+                android:id="@+id/decimalButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text=","
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/resultButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/oxanium_extralight"
+                android:text="="
+                android:textAlignment="center"
+                android:textSize="48sp"
+                app:cornerRadius="12dp" />
 
-    <LinearLayout
-        android:id="@+id/LinearLayout2"
-        android:layout_width="392dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="210dp"
-        android:layout_marginEnd="5dp"
-        android:divider="?android:attr/listDivider"
-        android:dividerPadding="30dp"
-        android:orientation="horizontal"
-        android:showDividers="middle|beginning|end"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentInputTextView">
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="4"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="5"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="6"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/subButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="-"
-            android:textAlignment="center"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/LinearLayout3"
-        android:layout_width="392dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="310dp"
-        android:layout_marginEnd="5dp"
-        android:divider="?android:attr/listDivider"
-        android:dividerPadding="30dp"
-        android:orientation="horizontal"
-        android:showDividers="middle|beginning|end"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentInputTextView">
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="1"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="2"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="3"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/sumButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="+"
-            android:textAlignment="center"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/LinearLayout4"
-        android:layout_width="392dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="410dp"
-        android:layout_marginEnd="5dp"
-        android:divider="?android:attr/listDivider"
-        android:dividerPadding="30dp"
-        android:orientation="horizontal"
-        android:showDividers="middle|beginning|end"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentInputTextView">
-
-        <Button
-            android:id="@+id/button00"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="00"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/button0"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="0"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/decimalButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text=","
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/resultButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/oxanium_extralight"
-            android:text="="
-            android:textAlignment="center"
-            android:textSize="48sp"
-            app:cornerRadius="12dp" />
-
-    </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
