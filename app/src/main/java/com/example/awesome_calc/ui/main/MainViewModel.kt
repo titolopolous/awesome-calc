@@ -1,8 +1,10 @@
 package com.example.awesome_calc.ui.main
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.awesome_calc.model.op.BaseOperation
 
 class MainViewModel : ViewModel() {
     private var _operationText = MutableLiveData<String?>()
@@ -12,6 +14,18 @@ class MainViewModel : ViewModel() {
     private var _inputText = MutableLiveData<String?>()
     val inputText: LiveData<String?>
         get() = _inputText
+
+    private var _currentOperation: BaseOperation? = null
+    private var currentOperation: BaseOperation?
+        get() = _currentOperation
+        private set(value) {
+            _currentOperation = value
+            updateOperationText()
+        }
+
+    fun updateOperationText() {
+        _operationText.value = currentOperation?.getText()
+    }
 
     fun inputIsZero(): Boolean {
         return _inputText.value == null || _inputText.value == "0";
@@ -65,6 +79,18 @@ class MainViewModel : ViewModel() {
     }
 
     fun clear() {
+        _inputText.value = null
+        currentOperation = null
+    }
+
+    fun setCurrentOperation(factoryFun: (Double) -> BaseOperation) {
+        if(_inputText.value == null && currentOperation == null) {
+            return
+        }
+
+        var firstValue = if(currentOperation == null) (_inputText.value as String).toDouble()
+            else (currentOperation as BaseOperation).firstValue
+        currentOperation = factoryFun(firstValue)
         _inputText.value = null
     }
 }

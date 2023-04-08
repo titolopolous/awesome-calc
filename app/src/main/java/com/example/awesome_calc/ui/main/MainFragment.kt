@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.lifecycle.Observer
 import com.example.awesome_calc.R
+import com.example.awesome_calc.model.op.*
 
 class MainFragment : Fragment() {
 
@@ -60,5 +61,12 @@ class MainFragment : Fragment() {
         // Borradores
         view.findViewById<Button>(R.id.eraseLeftButton).setOnClickListener { viewModel.eraseLeft() }
         view.findViewById<Button>(R.id.clearButton).setOnClickListener { viewModel.clear() }
+
+        // Operaciones
+        view.findViewById<Button>(R.id.perButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> PerOperation(firstValue) } }
+        view.findViewById<Button>(R.id.divButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> DivOperation(firstValue) } }
+        view.findViewById<Button>(R.id.mulButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> MulOperation(firstValue) } }
+        view.findViewById<Button>(R.id.subButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> SubOperation(firstValue) } }
+        view.findViewById<Button>(R.id.sumButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> SumOperation(firstValue) } }
     }
 }
