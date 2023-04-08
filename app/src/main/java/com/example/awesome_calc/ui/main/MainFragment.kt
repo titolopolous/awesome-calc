@@ -22,7 +22,6 @@ class MainFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -34,6 +33,7 @@ class MainFragment : Fragment() {
     }
 
     fun bindInputData(view: View) {
+        // TODO Mejorar qué sucede si los números son demasiado grandes
         var inputTextView: TextView = view.findViewById(R.id.inputTextView);
         viewModel.inputText.observe(viewLifecycleOwner, Observer { inputTextView.text = it ?: "0" })
 
