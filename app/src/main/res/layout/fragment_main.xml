@@ -18,14 +18,16 @@
         android:enabled="false"
         android:gravity="bottom|end"
         android:inputType="text"
-        android:text="op"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,TextSizeCheck"
+        tools:text="op"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/currentInputTextView"
@@ -44,7 +46,9 @@
         android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/operationTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/operationTextView"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,LabelFor"
+        android:importantForAutofill="no" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/buttonsConstraintLayout"
@@ -78,7 +82,8 @@
                 android:text="C"
                 android:textAlignment="center"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/percButton"
@@ -90,7 +95,8 @@
                 android:text="%"
                 android:textAlignment="center"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/backspaceButton"
@@ -102,7 +108,8 @@
                 android:text="R"
                 android:textAlignment="center"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/divButton"
@@ -114,7 +121,8 @@
                 android:text="÷"
                 android:textAlignment="center"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
         </LinearLayout>
 
@@ -143,7 +151,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/button8"
@@ -157,7 +166,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/button9"
@@ -171,7 +181,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/mulButton"
@@ -183,7 +194,8 @@
                 android:text="X"
                 android:textAlignment="center"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
         </LinearLayout>
 
@@ -212,7 +224,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/button5"
@@ -226,7 +239,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/button6"
@@ -240,7 +254,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/subButton"
@@ -252,7 +267,8 @@
                 android:text="-"
                 android:textAlignment="center"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
         </LinearLayout>
 
@@ -281,7 +297,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/button2"
@@ -295,7 +312,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/button3"
@@ -309,7 +327,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/sumButton"
@@ -321,7 +340,8 @@
                 android:text="+"
                 android:textAlignment="center"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
         </LinearLayout>
 
@@ -350,7 +370,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/button0"
@@ -364,7 +385,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/decimalButton"
@@ -378,7 +400,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
                 android:id="@+id/resultButton"
@@ -390,7 +413,8 @@
                 android:text="="
                 android:textAlignment="center"
                 android:textSize="48sp"
-                app:cornerRadius="12dp" />
+                app:cornerRadius="12dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
