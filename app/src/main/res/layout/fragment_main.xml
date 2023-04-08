@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/operationTextView"
-        android:layout_width="0dp"
-        android:layout_height="84dp"
+        android:layout_width="388dp"
+        android:layout_height="126dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@android:color/transparent"
@@ -31,8 +31,8 @@
 
     <EditText
         android:id="@+id/inputTextView"
-        android:layout_width="0dp"
-        android:layout_height="248dp"
+        android:layout_width="376dp"
+        android:layout_height="170dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@android:color/transparent"
