@@ -4,7 +4,7 @@ class DivOperation(override val firstValue: Double) : BaseOperation(firstValue) 
     override fun execute(): Double {
         val secondValue = getSecondValueAsDouble();
         if(secondValue == 0.0) {
-            throw java.lang.IllegalArgumentException("La división con cero está prohibida.")
+            return if (firstValue == 0.0) Double.NaN else Double.POSITIVE_INFINITY
         }
 
         return firstValue / secondValue;
