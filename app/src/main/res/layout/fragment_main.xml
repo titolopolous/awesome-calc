@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/operationTextView"
-        android:layout_width="388dp"
+        android:layout_width="0dp"
         android:layout_height="126dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
@@ -31,7 +31,7 @@
 
     <EditText
         android:id="@+id/inputTextView"
-        android:layout_width="376dp"
+        android:layout_width="0dp"
         android:layout_height="170dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
@@ -86,7 +86,7 @@
                 tools:ignore="ButtonStyle,HardcodedText" />
 
             <Button
-                android:id="@+id/backspaceButton"
+                android:id="@+id/eraseLeftButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
