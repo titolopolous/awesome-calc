@@ -43,6 +43,8 @@ class MainFragment : Fragment() {
 
     fun bindButtons(view: View) {
         // Números
+        view.findViewById<Button>(R.id.button0).setOnClickListener { viewModel.addZero() }
+        view.findViewById<Button>(R.id.button00).setOnClickListener { viewModel.addZero(true) }
         view.findViewById<Button>(R.id.button1).setOnClickListener { viewModel.addInput(1) }
         view.findViewById<Button>(R.id.button2).setOnClickListener { viewModel.addInput(2) }
         view.findViewById<Button>(R.id.button3).setOnClickListener { viewModel.addInput(3) }
@@ -52,5 +54,6 @@ class MainFragment : Fragment() {
         view.findViewById<Button>(R.id.button7).setOnClickListener { viewModel.addInput(7) }
         view.findViewById<Button>(R.id.button8).setOnClickListener { viewModel.addInput(8) }
         view.findViewById<Button>(R.id.button9).setOnClickListener { viewModel.addInput(9) }
+        view.findViewById<Button>(R.id.decimalButton).setOnClickListener { viewModel.addDecimalSymbol() }
     }
 }

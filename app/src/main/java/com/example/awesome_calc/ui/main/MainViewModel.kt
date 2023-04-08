@@ -1,6 +1,5 @@
 package com.example.awesome_calc.ui.main
 
-import android.view.View
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -16,6 +15,24 @@ class MainViewModel : ViewModel() {
 
     fun addInput(input: Int){
         addInput(input.toString())
+    }
+
+    fun addDecimalSymbol() {
+        var decimalSymbol : String = ".";
+        if(_inputText.value != null && !(_inputText.value as String).contains(decimalSymbol)) {
+            _inputText.value += decimalSymbol;
+        }
+    }
+
+    fun addZero(doubleZero: Boolean = false) {
+        if(_inputText.value == null || _inputText.value == "0") {
+            return;
+        }
+
+        addInput("0")
+        if(doubleZero) {
+            addInput("0")
+        }
     }
 
     fun addInput(input: String){
