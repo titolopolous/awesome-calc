@@ -8,22 +8,42 @@
     tools:context=".ui.main.MainFragment">
 
     <EditText
-        android:id="@+id/currentInputTextView"
-        android:layout_width="380dp"
-        android:layout_height="197dp"
+        android:id="@+id/operationTextView"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="bottom|end"
+        android:inputType="text"
+        android:text="op"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/currentInputTextView"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:ems="10"
         android:enabled="false"
+        android:gravity="end"
         android:inputType="number"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
-        android:textSize="80sp"
+        android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/operationTextView" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/buttonsConstraintLayout"
