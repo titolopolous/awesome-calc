@@ -17,17 +17,17 @@
         android:ems="10"
         android:enabled="false"
         android:gravity="bottom|end"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
+        android:textColor="?attr/colorPrimary"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="LabelFor,TextSizeCheck"
-        tools:text="op"
-        android:importantForAutofill="no" />
+        tools:text="op" />
 
     <EditText
         android:id="@+id/inputTextView"
@@ -39,16 +39,16 @@
         android:ems="10"
         android:enabled="false"
         android:gravity="end"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:text="0"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
+        android:textColor="?attr/colorPrimary"
         android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/operationTextView"
-        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,LabelFor"
-        android:importantForAutofill="no" />
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,LabelFor" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/buttonsConstraintLayout"
