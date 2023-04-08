@@ -7,6 +7,7 @@ import com.example.awesome_calc.ui.main.MainFragment
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // TODO Corregir el título de la aplicación en pantalla
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         if (savedInstanceState == null) {
