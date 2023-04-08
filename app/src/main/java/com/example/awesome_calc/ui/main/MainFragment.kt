@@ -43,6 +43,7 @@ class MainFragment : Fragment() {
 
     fun bindButtons(view: View) {
         // Números
+        // Explicar que el espacio en blanco de arriba es con intención
         view.findViewById<Button>(R.id.button0).setOnClickListener { viewModel.addZero() }
         view.findViewById<Button>(R.id.button00).setOnClickListener { viewModel.addZero(true) }
         view.findViewById<Button>(R.id.button1).setOnClickListener { viewModel.addInput(1) }
@@ -55,5 +56,9 @@ class MainFragment : Fragment() {
         view.findViewById<Button>(R.id.button8).setOnClickListener { viewModel.addInput(8) }
         view.findViewById<Button>(R.id.button9).setOnClickListener { viewModel.addInput(9) }
         view.findViewById<Button>(R.id.decimalButton).setOnClickListener { viewModel.addDecimalSymbol() }
+
+        // Borradores
+        view.findViewById<Button>(R.id.eraseLeftButton).setOnClickListener { viewModel.eraseLeft() }
+        view.findViewById<Button>(R.id.clearButton).setOnClickListener { viewModel.clear() }
     }
 }

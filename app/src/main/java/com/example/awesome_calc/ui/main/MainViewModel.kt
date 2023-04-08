@@ -5,13 +5,17 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
-    private var _operationText = MutableLiveData<String>()
-    val operationText: LiveData<String>
+    private var _operationText = MutableLiveData<String?>()
+    val operationText: LiveData<String?>
         get() = _operationText
 
-    private var _inputText = MutableLiveData<String>()
-    val inputText: LiveData<String>
+    private var _inputText = MutableLiveData<String?>()
+    val inputText: LiveData<String?>
         get() = _inputText
+
+    fun inputIsZero(): Boolean {
+        return _inputText.value == null || _inputText.value == "0";
+    }
 
     fun addInput(input: Int){
         addInput(input.toString())
@@ -31,7 +35,7 @@ class MainViewModel : ViewModel() {
     }
 
     fun addZero(doubleZero: Boolean = false) {
-        if(_inputText.value == null || _inputText.value == "0") {
+        if(inputIsZero()) {
             return;
         }
 
@@ -43,7 +47,24 @@ class MainViewModel : ViewModel() {
 
     fun addInput(input: String){
         // TODO implementar resultados con mensajes para mostrar al usuario en caso de que las cosas no van bien
-        _inputText.value = if (_inputText.value == null) input else "${_inputText.value}$input"
+        _inputText.value = if (inputIsZero()) input else "${_inputText.value}$input"
         println("Added! $input ${_inputText.value}")
+    }
+
+    fun eraseLeft() {
+        if(inputIsZero()) {
+            return
+        }
+
+        if((_inputText.value as String).length == 1) {
+            _inputText.value = null
+            return
+        }
+
+        _inputText.value = (_inputText.value as String).dropLast(1)
+    }
+
+    fun clear() {
+        _inputText.value = null
     }
 }
