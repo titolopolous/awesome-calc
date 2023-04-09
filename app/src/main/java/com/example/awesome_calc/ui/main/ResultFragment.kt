@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.example.awesome_calc.R
 
 class ResultFragment(val viewModel: MainViewModel) : Fragment() {
@@ -16,8 +17,10 @@ class ResultFragment(val viewModel: MainViewModel) : Fragment() {
     ): View? {
         var view = inflater.inflate(R.layout.fragment_result, container, false)
         var result = viewModel.getOperationResult()
+
+        view.findViewById<TextView>(R.id.resultTextView).text = result.toString()
+
         viewModel.clear()
-        Log.d(ResultFragment::class.simpleName,"Result found: $result")
         return view
     }
 }
