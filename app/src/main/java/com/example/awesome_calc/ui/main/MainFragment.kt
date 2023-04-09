@@ -83,6 +83,11 @@ class MainFragment : Fragment() {
     }
 
     fun submit() {
+        if(!viewModel.currentOperationSet()) {
+            Toast.makeText(context, getString(R.string.toast_noOp), Toast.LENGTH_SHORT).show()
+            return
+        }
+
         viewModel.submitSecondCurrentOperationValue();
         var fm = (activity as FragmentActivity).supportFragmentManager;
         var ft = fm.beginTransaction()

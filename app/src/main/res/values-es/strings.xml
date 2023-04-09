@@ -6,4 +6,5 @@
     <string name="text_result">Resultado</string>
     <string name="share_title">Compartir resultado con...</string>
     <string name="toast_cleared">Borrado</string>
+    <string name="toast_noOp">No ha seleccionado una operación</string>
 </resources>

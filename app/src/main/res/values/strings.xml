@@ -5,4 +5,5 @@
     <string name="text_result">Result</string>
     <string name="share_title">Share result with...</string>
     <string name="toast_cleared">Cleared</string>
+    <string name="toast_noOp">No operation selected</string>
 </resources>
