@@ -410,7 +410,7 @@
                 android:autoSizeTextType="uniform"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/oxanium_extralight"
-                android:text=","
+                android:text="."
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="48sp"

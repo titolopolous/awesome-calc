@@ -35,7 +35,6 @@ class MainViewModel : ViewModel() {
     }
 
     fun addDecimalSymbol() {
-        // TODO distinguir entre regiones. Algunas usan comas
         var decimalSymbol : String = ".";
         if(_inputText.value == null || _inputText.value == "0") {
             _inputText.value = "0$decimalSymbol"
