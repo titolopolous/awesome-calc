@@ -3,4 +3,5 @@
     <string name="button_continue">continue</string>
     <string name="button_share">share</string>
     <string name="text_result">Result</string>
+    <string name="share_title">Share result with...</string>
 </resources>
