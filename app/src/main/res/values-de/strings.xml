@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Poe\'s Calculator</string>
+    <string name="button_continue">Fortfahren</string>
+    <string name="button_share">Teilen</string>
+    <string name="text_result">Ergebnis</string>
+</resources>
