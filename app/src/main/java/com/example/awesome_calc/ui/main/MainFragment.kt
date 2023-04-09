@@ -68,9 +68,14 @@ class MainFragment : Fragment() {
         view.findViewById<Button>(R.id.mulButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> MulOperation(firstValue) } }
         view.findViewById<Button>(R.id.subButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> SubOperation(firstValue) } }
         view.findViewById<Button>(R.id.sumButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> SumOperation(firstValue) } }
+
+        // Resultado
+        view.findViewById<Button>(R.id.resultButton).setOnClickListener { submit() }
     }
 
     fun submit() {
-        viewModel.c
+        viewModel.submitSecondCurrentOperationValue();
+        var result = viewModel.getOperationResult()
+        println(result)
     }
 }

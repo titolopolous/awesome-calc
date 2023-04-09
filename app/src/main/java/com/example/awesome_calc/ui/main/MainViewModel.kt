@@ -87,13 +87,36 @@ class MainViewModel : ViewModel() {
     }
 
     fun setCurrentOperation(factoryFun: (Double) -> Operation) {
-        if(_inputText.value == null && !currentOperationSet()) {
-            return
+        var firstValue = 0.0;
+        if(_inputText.value != null) {
+            firstValue = if(currentOperation == null) (_inputText.value as String).toDouble()
+                else (currentOperation as Operation).firstValue
         }
 
-        var firstValue = if(currentOperation == null) (_inputText.value as String).toDouble()
-            else (currentOperation as Operation).firstValue
         currentOperation = factoryFun(firstValue)
         _inputText.value = null
+    }
+
+    fun submitSecondCurrentOperationValue() {
+        if (!currentOperationSet()) {
+            throw UnsupportedOperationException("No current operation found")
+        }
+
+        var secondValue = if (_inputText.value == null) 0.0 else (_inputText.value as String).toDouble();
+        (currentOperation as Operation).secondValue = secondValue
+    }
+
+    fun getOperationResult(): Double {
+        if (!currentOperationSet()) {
+            throw UnsupportedOperationException("No current operation found")
+        }
+
+        var currentOperation = currentOperation as Operation
+        if (currentOperation.secondValue == null) {
+            // Mirar la función submitSecondCurrentOperationValue()
+            throw UnsupportedOperationException("Submit a second value before attempting a calculation")
+        }
+
+        return currentOperation.execute()
     }
 }

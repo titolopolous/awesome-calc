@@ -12,5 +12,7 @@ abstract class Operation(open val firstValue: Double) {
     }
 
     abstract fun execute() : Double
+
+    // TODO: mostrar los números sin decimales cuando sea posible
     abstract fun getText() : String
 }
