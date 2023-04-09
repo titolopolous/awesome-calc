@@ -1,5 +1,7 @@
 package com.example.awesome_calc.model.op
 
+import com.example.awesome_calc.model.helpers.FormatHelper
+
 class DivOperation(override val firstValue: Double) : Operation(firstValue) {
     override fun execute(): Double {
         // TODO mencionar esto en la memoria
@@ -13,6 +15,6 @@ class DivOperation(override val firstValue: Double) : Operation(firstValue) {
     }
 
     override fun getText() : String {
-        return "$firstValue ÷ ${getSecondValueAsText()}";
+        return "${FormatHelper.formatDouble(firstValue)} ÷ ${FormatHelper.formatDouble(secondValue)}";
     }
 }

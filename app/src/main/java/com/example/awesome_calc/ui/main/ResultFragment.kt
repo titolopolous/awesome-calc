@@ -10,19 +10,21 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.FragmentActivity
 import com.example.awesome_calc.R
+import com.example.awesome_calc.model.helpers.FormatHelper
 import kotlin.properties.Delegates
 
 class ResultFragment(val viewModel: MainViewModel) : Fragment() {
-    private var result by Delegates.notNull<Double>()
+    private var result by Delegates.notNull<String>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         var view = inflater.inflate(R.layout.fragment_result, container, false)
-        result = viewModel.getOperationResult()
+        var resultDouble = viewModel.getOperationResult()
+        result = FormatHelper.formatDouble(resultDouble)
 
-        view.findViewById<TextView>(R.id.resultTextView).text = result.toString()
+        view.findViewById<TextView>(R.id.resultTextView).text = result
         view.findViewById<Button>(R.id.shareButton).setOnClickListener { shareResult() }
         view.findViewById<Button>(R.id.continueButton).setOnClickListener { doContinue() }
 
@@ -33,7 +35,7 @@ class ResultFragment(val viewModel: MainViewModel) : Fragment() {
     fun shareResult() {
         val sendIntent: Intent = Intent().apply {
             action = Intent.ACTION_SEND
-            putExtra(Intent.EXTRA_TEXT, result.toString())
+            putExtra(Intent.EXTRA_TEXT, result)
             type = "text/plain"
         }
 

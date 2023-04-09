@@ -1,5 +1,7 @@
 package com.example.awesome_calc.model.op
 
+import java.text.DecimalFormat
+
 abstract class Operation(open val firstValue: Double) {
     var secondValue: Double? = null
 
@@ -7,12 +9,7 @@ abstract class Operation(open val firstValue: Double) {
         return secondValue as Double;
     }
 
-    fun getSecondValueAsText() : String {
-        return secondValue?.toString() ?: "";
-    }
-
     abstract fun execute() : Double
 
-    // TODO: mostrar los números sin decimales cuando sea posible
     abstract fun getText() : String
 }
