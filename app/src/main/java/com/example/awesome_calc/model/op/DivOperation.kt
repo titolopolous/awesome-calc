@@ -1,6 +1,6 @@
 package com.example.awesome_calc.model.op
 
-class DivOperation(override val firstValue: Double) : BaseOperation(firstValue) {
+class DivOperation(override val firstValue: Double) : Operation(firstValue) {
     override fun execute(): Double {
         // TODO mencionar esto en la memoria
         // Considerar estos resultados fuera de norma en la página de resultados

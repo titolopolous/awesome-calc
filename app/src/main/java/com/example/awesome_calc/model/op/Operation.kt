@@ -1,7 +1,7 @@
 package com.example.awesome_calc.model.op
 
-abstract class BaseOperation(open val firstValue: Double) {
-    val secondValue: Double? = null
+abstract class Operation(open val firstValue: Double) {
+    var secondValue: Double? = null
 
     fun getSecondValueAsDouble() : Double {
         return secondValue as Double;

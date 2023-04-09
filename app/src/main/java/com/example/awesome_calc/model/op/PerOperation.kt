@@ -1,6 +1,6 @@
 package com.example.awesome_calc.model.op
 
-class PerOperation(override val firstValue: Double) : BaseOperation(firstValue) {
+class PerOperation(override val firstValue: Double) : Operation(firstValue) {
     override fun execute(): Double {
         return firstValue * getSecondValueAsDouble() / 100;
     }

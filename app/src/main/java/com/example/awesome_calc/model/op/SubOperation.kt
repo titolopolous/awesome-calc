@@ -1,6 +1,6 @@
 package com.example.awesome_calc.model.op
 
-class SubOperation(override val firstValue: Double) : BaseOperation(firstValue) {
+class SubOperation(override val firstValue: Double) : Operation(firstValue) {
     override fun execute(): Double {
         return firstValue - getSecondValueAsDouble();
     }
