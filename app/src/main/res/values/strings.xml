@@ -4,4 +4,5 @@
     <string name="button_share">share</string>
     <string name="text_result">Result</string>
     <string name="share_title">Share result with...</string>
+    <string name="toast_cleared">Cleared</string>
 </resources>

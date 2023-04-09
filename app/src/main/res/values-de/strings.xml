@@ -5,4 +5,5 @@
     <string name="button_share">Teilen</string>
     <string name="text_result">Ergebnis</string>
     <string name="share_title">Ergebnis teilen mit...</string>
+    <string name="toast_cleared">Gelöscht</string>
 </resources>

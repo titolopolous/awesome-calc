@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.Observer
 import com.example.awesome_calc.R
@@ -63,7 +64,7 @@ class MainFragment : Fragment() {
 
         // Borradores
         view.findViewById<Button>(R.id.eraseLeftButton).setOnClickListener { viewModel.eraseLeft() }
-        view.findViewById<Button>(R.id.clearButton).setOnClickListener { viewModel.clear() }
+        view.findViewById<Button>(R.id.clearButton).setOnClickListener { runWithToast(viewModel::clear, getString(R.string.toast_cleared)) }
 
         // Operaciones
         view.findViewById<Button>(R.id.perButton).setOnClickListener { viewModel.setCurrentOperation { firstValue -> PerOperation(firstValue) } }
@@ -74,6 +75,11 @@ class MainFragment : Fragment() {
 
         // Resultado
         view.findViewById<Button>(R.id.resultButton).setOnClickListener { submit() }
+    }
+
+    fun runWithToast(action: () -> Unit, toastMessage: String) {
+        action()
+        Toast.makeText(context, toastMessage, Toast.LENGTH_SHORT).show()
     }
 
     fun submit() {
