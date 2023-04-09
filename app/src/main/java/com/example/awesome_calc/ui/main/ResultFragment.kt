@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentActivity
 import com.example.awesome_calc.R
 import com.example.awesome_calc.model.helpers.FormatHelper
 import kotlin.properties.Delegates
+import kotlin.isNaN
 
 class ResultFragment(val viewModel: MainViewModel) : Fragment() {
     private var result by Delegates.notNull<String>()
@@ -22,7 +23,15 @@ class ResultFragment(val viewModel: MainViewModel) : Fragment() {
     ): View? {
         var view = inflater.inflate(R.layout.fragment_result, container, false)
         var resultDouble = viewModel.getOperationResult()
-        result = FormatHelper.formatDouble(resultDouble)
+
+        if(resultDouble.isNaN()) {
+            result = getString(R.string.result_undefined)
+        } else {
+            result = when(resultDouble) {
+                Double.POSITIVE_INFINITY -> getString(R.string.result_infinity)
+                else -> FormatHelper.formatDouble(resultDouble)
+            }
+        }
 
         view.findViewById<TextView>(R.id.resultTextView).text = result
         view.findViewById<Button>(R.id.shareButton).setOnClickListener { shareResult() }

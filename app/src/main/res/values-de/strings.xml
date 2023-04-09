@@ -7,4 +7,6 @@
     <string name="share_title">Ergebnis teilen mit...</string>
     <string name="toast_cleared">Gelöscht</string>
     <string name="toast_noOp">Keine Operation wurde gewählt</string>
+    <string name="result_undefined">unbestimmt</string>
+    <string name="result_infinity">unendlich</string>
 </resources>
