@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.Observer
 import com.example.awesome_calc.R
 import com.example.awesome_calc.model.op.*
@@ -19,10 +20,12 @@ class MainFragment : Fragment() {
     }
 
     private lateinit var viewModel: MainViewModel
+    private lateinit var resultFragment: ResultFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        resultFragment = ResultFragment(viewModel)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -75,7 +78,10 @@ class MainFragment : Fragment() {
 
     fun submit() {
         viewModel.submitSecondCurrentOperationValue();
-        var result = viewModel.getOperationResult()
-        println(result)
+        var fm = (activity as FragmentActivity).supportFragmentManager;
+        var ft = fm.beginTransaction()
+        ft.replace(R.id.main, resultFragment)
+        ft.addToBackStack(null)
+        ft.commit()
     }
 }
