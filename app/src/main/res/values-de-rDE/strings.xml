@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Poe\'s Calculator</string>
+    <string name="button_continue">Fortfahren</string>
+    <string name="button_share">Teilen</string>
+    <string name="text_result">Ergebnis</string>
+    <string name="share_title">Ergebnis teilen mit...</string>
+    <string name="toast_cleared">Gelöscht</string>
+    <string name="toast_noOp">Keine Operation wurde gewählt</string>
+    <string name="result_undefined">unbestimmt</string>
+    <string name="result_infinity">unendlich</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de Poe</string>
+    <string name="button_continue">continuar</string>
+    <string name="button_share">compartir</string>
+    <string name="text_result">Resultado</string>
+    <string name="share_title">Compartir resultado con...</string>
+    <string name="toast_cleared">Borrado</string>
+    <string name="toast_noOp">No ha seleccionado una operación</string>
+    <string name="result_undefined">indefinido</string>
+    <string name="result_infinity">infinito</string>
+</resources>

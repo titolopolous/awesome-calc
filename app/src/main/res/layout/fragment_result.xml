@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Result" />
+        tools:text="@string/text_result" />
 
     <TextView
         android:id="@+id/resultTextView"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultTextView"
-        tools:text="Share" />
+        tools:text="@string/button_share" />
 
     <Button
         android:id="@+id/continueButton"
@@ -61,5 +61,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shareButton"
-        tools:text="Continue" />
+        tools:text="@string/button_continue" />
 </androidx.constraintlayout.widget.ConstraintLayout>
