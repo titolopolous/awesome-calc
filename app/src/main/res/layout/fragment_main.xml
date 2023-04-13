@@ -11,8 +11,8 @@
         android:id="@+id/operationTextView"
         android:layout_width="0dp"
         android:layout_height="126dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:enabled="false"
@@ -31,10 +31,11 @@
 
     <EditText
         android:id="@+id/inputTextView"
-        android:layout_width="0dp"
-        android:layout_height="170dp"
+        android:layout_width="404dp"
+        android:layout_height="120dp"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:enabled="false"
@@ -46,7 +47,7 @@
         android:textColor="?android:attr/textColorPrimaryNoDisable"
         android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/operationTextView"
         tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,LabelFor" />
@@ -159,7 +160,7 @@
                 android:text="7"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -174,7 +175,7 @@
                 android:text="8"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -189,7 +190,7 @@
                 android:text="9"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -205,6 +206,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp"
+                android:textStyle="italic"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -234,7 +236,7 @@
                 android:text="4"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -249,7 +251,7 @@
                 android:text="5"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -264,7 +266,7 @@
                 android:text="6"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -276,7 +278,7 @@
                 android:autoSizeTextType="uniform"
                 android:backgroundTint="?attr/colorPrimaryDark"
 
-                android:text="-"
+                android:text="—"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp"
@@ -309,7 +311,7 @@
                 android:text="1"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -324,7 +326,7 @@
                 android:text="2"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -339,7 +341,7 @@
                 android:text="3"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -384,7 +386,7 @@
                 android:text="00"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -399,7 +401,7 @@
                 android:text="0"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText" />
 

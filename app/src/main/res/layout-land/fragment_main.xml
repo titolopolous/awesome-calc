@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/operationTextView"
-        android:layout_width="715dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
@@ -31,10 +31,10 @@
 
     <EditText
         android:id="@+id/inputTextView"
-        android:layout_width="725dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:enabled="false"
@@ -44,9 +44,9 @@
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="?android:attr/textColorPrimaryNoDisable"
-        android:textSize="50sp"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/operationTextView"
         tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,LabelFor" />
@@ -80,11 +80,11 @@
                 android:layout_weight="1"
                 android:autoSizeTextType="uniform"
                 android:backgroundTint="?attr/colorPrimaryDark"
-
                 android:text="C"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp"
+                android:textStyle="bold"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -100,6 +100,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp"
+                android:textStyle="bold"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -115,6 +116,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp"
+                android:textStyle="bold"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -129,7 +131,8 @@
                 android:text="÷"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="48sp"
+                android:textSize="60sp"
+                android:textStyle="bold"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -155,13 +158,13 @@
                 android:layout_weight="1"
                 android:autoSizeTextType="uniform"
                 android:backgroundTint="@color/white"
-
                 android:text="7"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
+
 
             <Button
                 android:id="@+id/button8"
@@ -170,11 +173,10 @@
                 android:layout_weight="1"
                 android:autoSizeTextType="uniform"
                 android:backgroundTint="@color/white"
-
                 android:text="8"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -189,7 +191,7 @@
                 android:text="9"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -205,6 +207,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp"
+                android:textStyle="bold|italic"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -234,7 +237,7 @@
                 android:text="4"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -245,11 +248,10 @@
                 android:layout_weight="1"
                 android:autoSizeTextType="uniform"
                 android:backgroundTint="@color/white"
-
                 android:text="5"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -264,7 +266,7 @@
                 android:text="6"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -276,7 +278,7 @@
                 android:autoSizeTextType="uniform"
                 android:backgroundTint="?attr/colorPrimaryDark"
 
-                android:text="-"
+                android:text="—"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="48sp"
@@ -309,7 +311,7 @@
                 android:text="1"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -324,7 +326,7 @@
                 android:text="2"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -339,7 +341,7 @@
                 android:text="3"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -380,11 +382,10 @@
                 android:layout_weight="1"
                 android:autoSizeTextType="uniform"
                 android:backgroundTint="@color/white"
-
                 android:text="00"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -399,7 +400,7 @@
                 android:text="0"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
@@ -414,7 +415,7 @@
                 android:text="."
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="50sp"
                 app:cornerRadius="12dp"
                 tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
 
